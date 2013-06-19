@@ -9,6 +9,9 @@ Step 1: Download msysgit for windows from below location(except all defaults)
 
 Step 2: Clone existing repository it locally using GUI and downlod the files in c:/tmp/users.
 
+Or Download the zip file for entire repo https://github.com/saurabhmishra/Flume-Windows/archive/master.zip 
+   Unzip it to extract apache-flume-1.3.1-bin.zip into hadoop installation directory
+
 Step 3: Unzip the file into hadoop installation directory for example: "C:/hdp/hadoop/"
 
 Step 4: Create the configuration file at C:\hdp\hadoop\apache-flume-1.3.1-bin\conf as below for example , Source is syslog, channel is memory and sink is HDFS
