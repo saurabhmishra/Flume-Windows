@@ -47,19 +47,19 @@ syslog-agent.sinks.HDFS-LAB.hdfs.file.rollInterval = 60
 
 syslog-agent.sinks.HDFS-LAB.hdfs.file.Type = SequenceFile
 
-Step 4: Start flume agent to listen to syslog source 
+Step 5: Start flume agent to listen to syslog source 
 
 cd C:\hdp\hadoop\apache-flume-1.3.1-bin\conf
 
 java -Xmx20m -Dlog4j.configuration=log4j.properties -cp "C:\hdp\hadoop\apache-flume-1.3.1-bin\lib\*" org.apache.flume.node.Application -f C:\hdp\hadoop\apache-flume-1.3.1-bin\conf\flume.conf -n syslog-agent
  
-Step 5: Test it by initiating netcat (http://eternallybored.org/misc/netcat/netcat-win32-1.12.zip) on the master node
+Step 6: Test it by initiating netcat (http://eternallybored.org/misc/netcat/netcat-win32-1.12.zip) on the master node
 
    echo "Starting a syslog message" > /tmp/foo
 
    nc -v master-1 5140 < /tmp/foo
 
-Step 6: Verify If you get a file in hdfs location /apps/flume/syslogs/
+Step 7: Verify If you get a file in hdfs location /apps/flume/syslogs/
 
 Software requirement:
 ------------------------
