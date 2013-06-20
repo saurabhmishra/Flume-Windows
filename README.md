@@ -39,11 +39,11 @@ Step 4: Create the configuration file at C:\hdp\hadoop\apache-flume-1.3.1-bin\co
             
             syslog-agent.sinks.HDFS-LAB.hdfs.path = hdfs://master-1:8020/apps/flume/syslogs/%y-%m-%d/%H%M/%S
             
-            syslog-agent.sinks.HDFS-LAB.hdfs.file.Prefix = syslogfiles
+            syslog-agent.sinks.HDFS-LAB.hdfs.filePrefix = syslogfiles
             
-            syslog-agent.sinks.HDFS-LAB.hdfs.file.rollInterval = 60
+            syslog-agent.sinks.HDFS-LAB.hdfs.filerollInterval = 120
             
-            syslog-agent.sinks.HDFS-LAB.hdfs.file.Type = SequenceFile
+            syslog-agent.sinks.HDFS-LAB.hdfs.fileType = SequenceFile
             
 
 Step 5: Start flume agent to listen to syslog source 
